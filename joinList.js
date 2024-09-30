@@ -10,7 +10,18 @@
  */
 
 // Write our function (we must define it too!) below
-// ...
+const joinList = function(array) {
+  let result = "";
+
+  for (let i = 0; i < array.length; i++) {
+    result += array[i]; 
+    if (i < array.length - 1) {
+      result += ", "; 
+    }
+  }
+
+  return result; // Return the final string
+};
 
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
